@@ -1,4 +1,7 @@
-#include "Responsibility.h"
+#include "./BehaviorPattern/Responsibility.h"
+#include "./BehaviorPattern/Command.h"
+#include "./BehaviorPattern/Interpreter.h"
+
 #include <map>
 #include <string>
 #include <iostream>
@@ -14,9 +17,21 @@ void TestResponsibility()
   GY::ChainPatternDemo::main();
 }
 
+void TestCommand()
+{
+  GY::CommandDemo::main();
+}
+
+void TestInterpreter()
+{
+  GY::InterpreterDemo::main();
+}
+
 void registerFunction()
 {
   callocBack["Responsibility"] = TestResponsibility;
+  callocBack["Command"]        = TestCommand;
+  callocBack["Interpreter"]    = TestInterpreter;
 }
 
 void runCallocBack(std::string op)
@@ -37,6 +52,8 @@ int main(int argc, char** argv)
   {
     printf("Param error.Now Need One Param To Define Function.\n");
     printf("    Responsibility: Responsibility Pattern!.\n");
+    printf("    Command       : Command Pattern!.\n");
+    printf("    Interpreter   : Interpreter Pattern.\n");
     return 0;
   }
 

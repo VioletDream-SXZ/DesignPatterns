@@ -1,6 +1,8 @@
 BEHAVIOR = BehaviorPattern
+TOOL = Tool
 
-ALLFILE = Responsibility.o Command.o main.o
+ALLFILE = Responsibility.o Command.o Interpreter.o MomoeyTool.o \
+		  main.o
 
 main:$(ALLFILE)
 	g++ -o main $(ALLFILE)
@@ -11,6 +13,11 @@ Command.o:$(BEHAVIOR)/Command.h
 	g++ -c $(BEHAVIOR)/Command.cc -o Command.o
 Responsibility.o:$(BEHAVIOR)/Responsibility.h
 	g++ -c $(BEHAVIOR)/Responsibility.cc -o Responsibility.o
+Interpreter.o:
+	g++ -c $(BEHAVIOR)/Interpreter.cc -o Interpreter.o
+
+MomoeyTool.o:
+	g++ -c $(TOOL)/memoryTool.cc -o MomoeyTool.o
 
 clean:
 	rm -rf *.o

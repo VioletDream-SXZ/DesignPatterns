@@ -1,6 +1,7 @@
-#include "./BehaviorPattern/Responsibility.h"
-#include "./BehaviorPattern/Command.h"
-#include "./BehaviorPattern/Interpreter.h"
+#include "BehaviorPattern/Responsibility.h"
+#include "BehaviorPattern/Command.h"
+#include "BehaviorPattern/Interpreter.h"
+#include "BehaviorPattern/Observer.h"
 
 #include <map>
 #include <string>
@@ -27,11 +28,23 @@ void TestInterpreter()
   GY::InterpreterDemo::main();
 }
 
+void TestIterator()
+{
+  // TODO
+}
+
+void TestObserver()
+{
+  GY::ObserverDemo::main();
+}
+
 void registerFunction()
 {
   callocBack["Responsibility"] = TestResponsibility;
   callocBack["Command"]        = TestCommand;
   callocBack["Interpreter"]    = TestInterpreter;
+  callocBack["Iterator"]       = TestIterator;
+  callocBack["Observer"]       = TestObserver;
 }
 
 void runCallocBack(std::string op)
@@ -54,6 +67,7 @@ int main(int argc, char** argv)
     printf("    Responsibility: Responsibility Pattern!.\n");
     printf("    Command       : Command Pattern!.\n");
     printf("    Interpreter   : Interpreter Pattern.\n");
+    printf("    Observer      : Observer Pattern.\n");
     return 0;
   }
 

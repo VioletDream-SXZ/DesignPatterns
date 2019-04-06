@@ -2,7 +2,7 @@ BEHAVIOR = BehaviorPattern
 TOOL = Tool
 
 ALLFILE = Responsibility.o Command.o Interpreter.o MomoeyTool.o \
-		  Observer.o                                    \
+		  Observer.o  Mediator.o                        \
 		  main.o
 
 main:$(ALLFILE)
@@ -16,6 +16,8 @@ Responsibility.o:$(BEHAVIOR)/Responsibility.h
 	g++ -c $(BEHAVIOR)/Responsibility.cc -o Responsibility.o
 Interpreter.o:
 	g++ -c $(BEHAVIOR)/Interpreter.cc -o Interpreter.o
+Mediator.o:
+	g++ -c $(BEHAVIOR)/Mediator.cc -o Mediator.o
 Observer.o:
 	g++ -c $(BEHAVIOR)/Observer.cc -o Observer.o
 

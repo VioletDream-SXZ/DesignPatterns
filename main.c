@@ -2,6 +2,7 @@
 #include "BehaviorPattern/Command.h"
 #include "BehaviorPattern/Interpreter.h"
 #include "BehaviorPattern/Observer.h"
+#include "BehaviorPattern/Mediator.h"
 
 #include <map>
 #include <string>
@@ -38,6 +39,11 @@ void TestObserver()
   GY::ObserverDemo::main();
 }
 
+void TestMediator()
+{
+  GY::MediatorDemo::main();
+}
+
 void registerFunction()
 {
   callocBack["Responsibility"] = TestResponsibility;
@@ -45,6 +51,7 @@ void registerFunction()
   callocBack["Interpreter"]    = TestInterpreter;
   callocBack["Iterator"]       = TestIterator;
   callocBack["Observer"]       = TestObserver;
+  callocBack["Mediator"]       = TestMediator;
 }
 
 void runCallocBack(std::string op)
@@ -67,6 +74,7 @@ int main(int argc, char** argv)
     printf("    Responsibility: Responsibility Pattern!.\n");
     printf("    Command       : Command Pattern!.\n");
     printf("    Interpreter   : Interpreter Pattern.\n");
+    printf("    Mediator      : Mediator Pattern.\n");
     printf("    Observer      : Observer Pattern.\n");
     return 0;
   }

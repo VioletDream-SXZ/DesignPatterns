@@ -2,13 +2,19 @@
 该项目为初学设计模式开始写的，可能存在一些错误，请多多指教。
 
 # 责职链模式
-博客地址：https://blog.csdn.net/Return_nellen/article/details/88873220
+相关解析博客地址：https://blog.csdn.net/Return_nellen/article/details/88873220
 
 # 命令模式
-博客地址：https://blog.csdn.net/Return_nellen/article/details/88876996
+相关解析博客地址：https://blog.csdn.net/Return_nellen/article/details/88876996
 
 # 解释器模式
-博客地址：https://blog.csdn.net/Return_nellen/article/details/88916476
+相关解析博客地址：https://blog.csdn.net/Return_nellen/article/details/88916476
+
+# 中介者模式
+相关解析博客地址：
+
+# 观察者模式
+相关解析博客地址：https://blog.csdn.net/Return_nellen/article/details/89046637
 
 # 说明
 1. 可能有人会问，为什么要用GY命名空间，嗯，爱屋及乌，嗯，相濡以沫，嗯，说白了就是我想我暗恋的人了，hhh。

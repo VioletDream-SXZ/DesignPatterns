@@ -3,6 +3,7 @@
 #include "BehaviorPattern/Interpreter.h"
 #include "BehaviorPattern/Observer.h"
 #include "BehaviorPattern/Mediator.h"
+#include "BehaviorPattern/Iterator.h"
 
 #include <map>
 #include <string>
@@ -31,7 +32,7 @@ void TestInterpreter()
 
 void TestIterator()
 {
-  // TODO
+  GY::IteratorDemo::main();
 }
 
 void TestObserver()
@@ -74,6 +75,7 @@ int main(int argc, char** argv)
     printf("    Responsibility: Responsibility Pattern!.\n");
     printf("    Command       : Command Pattern!.\n");
     printf("    Interpreter   : Interpreter Pattern.\n");
+    printf("    Iterator      : Iterator Pattern.\n");
     printf("    Mediator      : Mediator Pattern.\n");
     printf("    Observer      : Observer Pattern.\n");
     return 0;

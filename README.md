@@ -11,7 +11,7 @@
 相关解析博客地址：https://blog.csdn.net/Return_nellen/article/details/88916476
 
 # 中介者模式
-相关解析博客地址：
+相关解析博客地址：https://blog.csdn.net/Return_nellen/article/details/89056724
 
 # 观察者模式
 相关解析博客地址：https://blog.csdn.net/Return_nellen/article/details/89046637

@@ -3,8 +3,8 @@ TOOL = Tool
 
 INCLUDEFILE = -I BehaviorPattern
 ALLFILE = Responsibility.o Command.o Interpreter.o MomoeyTool.o  \
-		  Observer.o  Mediator.o Iterator.o Visitor.o Strategy.o \
-		  main.o
+	  Observer.o  Mediator.o Iterator.o Visitor.o Strategy.o \
+	  main.o
 
 main:$(ALLFILE)
 	g++ -o main $(ALLFILE) $(INCLUDEFILE)

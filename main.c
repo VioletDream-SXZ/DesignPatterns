@@ -4,6 +4,7 @@
 #include "BehaviorPattern/Observer.h"
 #include "BehaviorPattern/Mediator.h"
 #include "BehaviorPattern/Iterator.h"
+#include "BehaviorPattern/Strategy.h"
 
 #include <map>
 #include <string>
@@ -45,6 +46,11 @@ void TestMediator()
   GY::MediatorDemo::main();
 }
 
+void TestStrategy()
+{
+  GY::StrategyDemo::main();
+}
+
 void registerFunction()
 {
   callocBack["Responsibility"] = TestResponsibility;
@@ -53,6 +59,7 @@ void registerFunction()
   callocBack["Iterator"]       = TestIterator;
   callocBack["Observer"]       = TestObserver;
   callocBack["Mediator"]       = TestMediator;
+  callocBack["Strategy"]       = TestStrategy;
 }
 
 void runCallocBack(std::string op)
@@ -78,6 +85,7 @@ int main(int argc, char** argv)
     printf("    Iterator      : Iterator Pattern.\n");
     printf("    Mediator      : Mediator Pattern.\n");
     printf("    Observer      : Observer Pattern.\n");
+    printf("    Strategy      : Strategy Pattern.\n");
     return 0;
   }
 
